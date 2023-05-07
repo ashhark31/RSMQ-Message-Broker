@@ -3,7 +3,7 @@ const request = require("request")
 const updateTask = require("./updateTask")
 const router = new express.Router()
 
-router.post('/task/listener', (req,res) => {
+router.get('/task/listener', (req,res) => {
     try{
         request.get({
             "headers": { "content-type": "application/json" },
